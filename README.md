@@ -49,19 +49,23 @@ Screenshots that shows the full generated web page:<br>
 These notes and links are listing some valuable references among others that I used doing this homework:<br>
 <br>
 
-[https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/)
+[https://web.dev/offline-cookbook/#cache-falling-back-to-network](https://web.dev/offline-cookbook/#cache-falling-back-to-network)
 
-[https://docs.mongodb.com/manual/reference/operator/aggregation/sum/](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)
+[https://web.dev/offline-cookbook/#cache-falling-back-to-network](https://web.dev/offline-cookbook/#cache-falling-back-to-network)
 
-[https://mongoosejs.com/docs/api.html#aggregate_Aggregate](https://mongoosejs.com/docs/api.html#aggregate_Aggregate)
+[https://web.dev/offline-cookbook/#cache-falling-back-to-network](https://web.dev/offline-cookbook/#cache-falling-back-to-network)
 
-[https://docs.mongodb.com/manual/reference/operator/update/push/](https://docs.mongodb.com/manual/reference/operator/update/push/)
+[https://developer.mozilla.org/en-US/docs/Web/Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 
-[https://kb.objectrocket.com/mongo-db/how-to-use-the-mongoose-limit-function-927](https://kb.objectrocket.com/mongo-db/how-to-use-the-mongoose-limit-function-927)
+[https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+
+[https://jscompress.com/]https://jscompress.com/)
+
+[https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 
 [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
 
-[https://expressjs.com/en/guide/writing-middleware.html](https://expressjs.com/en/guide/writing-middleware.html)
+[https://www.npmjs.com/package/compression]https://www.npmjs.com/package/compression)
 
 [https://shields.io/category/dependencies/](https://shields.io/category/dependencies/)
 
