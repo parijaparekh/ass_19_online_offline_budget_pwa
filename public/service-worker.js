@@ -1,14 +1,15 @@
 console.log("Hello from your service worker!");
 
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/index.js",
-  "/db.js",
-  "/favicon.ico",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
+  // 'offline.html',
+  // "/",
+  "./index.html",
+  "./styles.css",
+  "./index.js",
+  "./db.js",
+  "./icons/favicon.ico",
+  "./icons/icon-192x192.png",
+  "./icons/icon-512x512.png"
 ];
 
 const CACHE_NAME = "static-cache-v2";
@@ -16,19 +17,26 @@ const DATA_CACHE_NAME = "data-cache-v1";
 
 // install
 self.addEventListener("install", function(evt) {
+    // pre cache budget data
+    evt.waitUntil(
+      caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/api/transaction"))
+    );
+  
+   // pre cache all static assets
   evt.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
+    caches.open(CACHE_NAME).then(function(cache) {
       console.log("Your files were pre-cached successfully!");
       return cache.addAll(FILES_TO_CACHE);
     })
   );
-
+  console.log(FILES_TO_CACHE);
   self.skipWaiting();
 });
 
 self.addEventListener("activate", function(evt) {
   evt.waitUntil(
     caches.keys().then(keyList => {
+      console.log(keyList);
       return Promise.all(
         keyList.map(key => {
           if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
@@ -68,11 +76,12 @@ self.addEventListener("fetch", function(evt) {
     return;
   }
 
-  // if the request is not for the API, serve static assets using "offline-first" approach.
-  // see https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook#cache-falling-back-to-network
   evt.respondWith(
-    caches.match(evt.request).then(function(response) {
-      return response || fetch(evt.request);
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.match(evt.request).then(response => {
+        return response || fetch(evt.request);
+      });
     })
   );
 });
+

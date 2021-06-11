@@ -4,6 +4,7 @@ let budgetVersion;
 // Create a new db request for a "budget" database.
 const request = indexedDB.open('BudgetDB', budgetVersion || 21);
 
+
 request.onupgradeneeded = function (e) {
   console.log('Upgrade needed in IndexDB');
 
@@ -12,11 +13,13 @@ request.onupgradeneeded = function (e) {
 
   console.log(`DB Updated from version ${oldVersion} to ${newVersion}`);
 
+// Create schema
   db = e.target.result;
-
+// Creates an object store
   if (db.objectStoreNames.length === 0) {
     db.createObjectStore('BudgetStore', { autoIncrement: true });
   }
+  
 };
 
 request.onerror = function (e) {
@@ -68,6 +71,7 @@ function checkDatabase() {
 
 request.onsuccess = function (e) {
   console.log('success');
+  console.log(request.result);
   db = e.target.result;
 
   // Check if app is online before reading from db
