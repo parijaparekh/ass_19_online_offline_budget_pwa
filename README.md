@@ -28,16 +28,10 @@ GIVEN a user is on Budget App without an internet connection:<br>
 
 ***
 
-Screenshots that shows the full generated web page:<br>
+Screenshot that shows the full generated web page:<br>
 <br>
 
 ![alt text](public/images/scrshot-home.png)
-<br>
-
-![alt text](public/images/scrshot-dashboard.png)
-<br>
-
-![alt text](public/images/scrshot-exercise.png)
 <br>
 <br>
 <br>
