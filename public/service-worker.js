@@ -1,13 +1,13 @@
 console.log("Hello from your service worker!");
 
 const FILES_TO_CACHE = [
-  "./index.html",
-  "./styles.css",
-  "./index.js",
-  "./db.js",
-  "./icons/favicon.ico",
-  "./icons/icon-192x192.png",
-  "./icons/icon-512x512.png"
+  "/index.html",
+  "/styles.css",
+  "/index.js",
+  "/db.js",
+  "/icons/favicon.ico",
+  "/icons/icon-192x192.png",
+  "/icons/icon-512x512.png"
 ];
 
 const CACHE_NAME = "static-cache-v2";
