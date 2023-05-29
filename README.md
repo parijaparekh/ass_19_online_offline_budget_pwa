@@ -3,9 +3,6 @@
 ## **online/offline budget app**<br>
 <br>
 
-[https://shrouded-coast-31692.herokuapp.com/](https://shrouded-coast-31692.herokuapp.com/)<br>
-<br>
-
 ## description
 
 ***
@@ -68,15 +65,7 @@ These notes and links are listing some valuable references among others that I u
 <br>
 <br>
 
-## credits
 
-***
-
-Stephen Woosley - Bootcamp Instructor<br>
-Patrick Haberern - Bootcamp TA<br>
-Tim Nagorski - Bootcamp TA<br>
-Sean Walmer - Bootcamp TA<br>
-Alexis San Javier - Bootcamp Tutor<br>
 <br>
 <br>
 
@@ -84,18 +73,9 @@ Alexis San Javier - Bootcamp Tutor<br>
 
 ***
 
-This is an assigment done under a bootcamp program, it is public but please contact the publisher before you use or
-change any content.<br>
-ghibli.github@gmail.com
-<br>
+This is an assigment done under a bootcamp program, it is public but please contact the publisher before you use or change any content.
 <br>
 
 ## badges
-
-***
-
-![GitHub all releases](https://img.shields.io/github/downloads/AranATA/tech-blog/total)
-
-![GitHub language count](https://img.shields.io/github/languages/count/AranATA/tech-blog)
 <br>
 <br>
